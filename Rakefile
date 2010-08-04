@@ -5,11 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ra-star"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "mr@man.com"
+    gem.summary = %Q{A* pathfinding in ruby }
+    gem.description = %Q{A* pathfinding in ruby}
+    gem.email = "stew@rtmatheson.com"
     gem.homepage = "http://github.com/stewartmatheson/ra-star"
-    gem.authors = ["Stewart"]
+    gem.authors = ["Stewart Matheson"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
