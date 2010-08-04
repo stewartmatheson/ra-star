@@ -24,8 +24,12 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/ra-star.rb",
+     "lib/ra-star/node.rb",
+     "lib/ra-star/path.rb",
      "ra-star.gemspec",
-     "test/helper.rb"
+     "test/helper.rb",
+     "test/test_node.rb",
+     "test/test_path.rb"
   ]
   s.homepage = %q{http://github.com/stewartmatheson/ra-star}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -34,6 +38,7 @@ Gem::Specification.new do |s|
   s.summary = %q{A* pathfinding in ruby}
   s.test_files = [
     "test/helper.rb",
+     "test/test_map.rb",
      "test/test_node.rb",
      "test/test_path.rb"
   ]
