@@ -1,6 +1,6 @@
 module RaStar
   class Node
-    attr_accessor :x, :y, :passable
+    attr_accessor :x, :y, :passable, :parent_node
     
     
     def initialize(x, y, passable = true)
@@ -13,6 +13,19 @@ module RaStar
     def ==(n)
       n.x == x && n.y == y
     end
+    
+    
+    def heuristic(n)
+      (positive_inversion(n.x - x) + positive_inversion(n.y - y)) * 100
+    end
+    
+    
+    private
+    def positive_inversion(i)
+      i * -1 if i < 0
+      i
+    end
+    
     
   end
 end

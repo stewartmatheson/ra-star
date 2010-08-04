@@ -20,4 +20,14 @@ class TestNode < Test::Unit::TestCase
   end
 
 
+  def test_heuristic_calculator
+    n1 = Node.new(1,1)
+    n2 = Node.new(2,2)
+    n3 = Node.new(1,8)
+    
+    assert_equal 200, n1.heuristic(n2)
+    assert_equal 700, n1.heuristic(n3)
+  end
+  
+  
 end
