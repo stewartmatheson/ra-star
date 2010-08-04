@@ -24,10 +24,12 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/ra-star.rb",
+     "lib/ra-star/map.rb",
      "lib/ra-star/node.rb",
      "lib/ra-star/path.rb",
      "ra-star.gemspec",
      "test/helper.rb",
+     "test/test_map.rb",
      "test/test_node.rb",
      "test/test_path.rb"
   ]
