@@ -14,7 +14,7 @@ module RaStar
       n.x == x && n.y == y
     end
     
-    
+    # Evauleates the current node against the passed node using the manhattan method. Returns the score.
     def heuristic(n)
       (positive_inversion(n.x - x) + positive_inversion(n.y - y)) * 100
     end
