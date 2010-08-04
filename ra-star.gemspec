@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Stewart Matheson"]
+  s.authors = ["Stewart"]
   s.date = %q{2010-08-04}
-  s.description = "A* path finding in Ruby"
-  s.email = "stew@rtmatheson.com"
+  s.description = %q{TODO: longer description of your gem}
+  s.email = %q{mr@man.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/ra-star.rb",
+     "ra-star.gemspec",
      "test/helper.rb",
      "test/test_ra-star.rb"
   ]
@@ -31,7 +32,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = "A* pathfinding for ruby."
+  s.summary = %q{TODO: one-line summary of your gem}
   s.test_files = [
     "test/helper.rb",
      "test/test_ra-star.rb"
