@@ -29,7 +29,7 @@ class TestNode < Test::Unit::TestCase
     assert_equal 700, n1.heuristic(n3)
     assert_operator n1.score(Node.new(2,2)), :<, n1.score(Node.new(8,8)), "Node score that is far away should be higher than the closer node."
     assert_operator n1.score(Node.new(2,2)), :>, n1.score(Node.new(1,1)), "Node score that is closer should be lower than the far node."
-    assert_operator n1.score(Node.new(1,2)), :==, n1.score(Node.new(2,2)), "Node score that is closer should be lower than the far node."
+    assert_equal n1.score(Node.new(2,2)), n1.score(Node.new(2,2)), "Node score that is closer should be lower than the far node."
   end
   
   
