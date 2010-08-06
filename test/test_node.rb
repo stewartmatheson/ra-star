@@ -30,4 +30,11 @@ class TestNode < Test::Unit::TestCase
   end
   
   
+  def test_movement_calculation_cost
+    n1 = Node.new(1,1)
+    n2 = Node.new(2,2)
+    assert_equal 1, n1.movement_cost(n2)
+  end
+  
+  
 end

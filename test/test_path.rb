@@ -25,4 +25,30 @@ class TestPath < Test::Unit::TestCase
   end
   
   
+  def test_horizontal_path
+    map = Map.new(5,5)
+    start_node = Node.new(1,5)
+    target_node = Node.new(5,1)
+    p = Path.new(map, start_node, target_node)
+    assert_equal start_node, p.current_location, "The start node is not the current location before a step has been taken"
+    4.times do |i|
+      assert_equal Node.new(i + 2, 5), p.next_step, "Step number #{i + 1} was not taken correctly"
+      p.move p.next_step
+    end
+  end
+  
+  
+  def test_vertical_path
+    map = Map.new(5,5)
+    start_node = Node.new(1,1)
+    target_node = Node.new(1,5)
+    p = Path.new(map, start_node, target_node)
+    assert_equal start_node, p.current_location, "The start node is not the current location before a step has been taken"
+    4.times do |i|
+      assert_equal Node.new(i + 2, 1), p.next_step, "Step number #{i + 1} was not taken correctly"
+      p.move p.next_step
+    end
+  end
+  
+  
 end
