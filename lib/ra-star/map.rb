@@ -1,10 +1,12 @@
 module RaStar
   # The map class represents the given map for the A* path calculations.  Maps consist of a number of nodes that get created based on the map size passed to the constructor. 
   class Map
-    attr_accessor :nodes
+    attr_accessor :nodes, :width, :height
     
     # Creates a new map based on the passed with and height.
     def initialize(width, height)
+      @width = width
+      @height = height
       @nodes = Array.new
       width.times do |w|
         height.times do |h|
